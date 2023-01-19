@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Palacio de la Música",
+    "location": "Calle Gran Vía 35, CP28013, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Renoir Plaza de España",
+    "location": "Calle Martín de los Heros 12, CP28008, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Palacio de la Prensa",
+    "location": "Plaza Callao 4, CP28013, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Sala Berlanga",
+    "location": "Calle Andrés Mellado 53, CP28015, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Cine Cité Manoteras",
+    "location": "Avenida Manoteras 40, CP28050, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Cine Conde Duque Santa Engracia",
+    "location": "Avenida Santa Engracia 132, CP28003, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Cines Embajadores",
+    "location": "Glorieta Santa María de la Cabeza 5, CP28045, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Roxy A",
+    "location": "Calle Fuencarral 123, CP28010, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Roxy B",
+    "location": "Calle Fuencarral 123, CP28010, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Callao",
+    "location": "Plaza Callao 3, CP28013, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Cinesa Príncipe Pío 3D",
+    "location": "Paseo La Florida , CP28008, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Cinesa Capitol 3D",
+    "location": "Calle Gran Vía 41, CP28013, Madrid",
+    "movies": []
+  },
+  {
+    "name": "mk2 Palacio de Hielo",
+    "location": "Calle Silvano 77, CP28043, Madrid",
+    "movies": []
+  },
+  {
+    "name": "Autocine Madrid RACE",
+    "location": "Calle Isla de Java 2, CP28034, Madrid",
+    "movies": []
+  }
+]
