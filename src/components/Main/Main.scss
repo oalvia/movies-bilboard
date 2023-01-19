@@ -1,0 +1,75 @@
+h2{
+    color: rgb(222, 196, 28);
+    text-align: center;
+    align-items: center;
+    font-family: fantasy;
+}
+.mainImage{
+    text-align: center;
+    align-items: center;
+    width: 40%;
+} 
+.imageContainer{
+    text-align: center;
+}
+
+h3{
+    color: black; text-shadow: grey 0.1em 0.1em 0.2em; font-size: 30px;
+}
+.list{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;   
+}
+.allMovies{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 400px;
+    align-items: center;
+    text-align: center;
+    border: solid white;
+    border-radius: 5%;
+    min-width : 300px;
+    max-width: 300px;
+    min-height: 350px;
+    max-height: 350px;
+    background: radial-gradient(circle at top left, #a9bdea, white)
+
+}
+.imgList{
+    width: 200px;
+    height: 220px;
+    margin: 15px;
+    border-radius: 25%;
+}
+.buttonSearch{
+    margin: 30px; 
+    
+}
+.button{
+    
+    text-align: center;
+    padding: 15px;
+}
+.show{
+    transition: background-color .5s;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+.show:hover{
+    background-color: powderblue;
+}
+main{
+    margin: 0px;
+    padding: 0px;
+
+    background: radial-gradient(circle at top left, rgb(52, 112, 176), #feffff) 
+    
+}
+
+
+

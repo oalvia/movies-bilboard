@@ -1,0 +1,55 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  align-items: center;
+}
+
+.listSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.allMoviesSearch {
+  display: inline-block;
+  margin: 15px;
+  align-items: center;
+  border: solid #90acef;
+  min-width: 40%;
+  min-height: 80px;
+  border-radius: 15px;
+  width: 45%;
+  background: radial-gradient(circle at top left, #a9bdea, white);
+}
+
+.imgFilter {
+  width: 50px;
+  height: 60px;
+  margin: 15px;
+  border-radius: 25%;
+}
+
+.inputForm {
+  border-radius: 5%;
+  margin: 15px;
+  text-align: center;
+  width: 180px;
+  height: 40px;
+  align-items: center;
+}
+
+.btn-outline-primary {
+  margin-left: 15px;
+}
+
+.btn1 {
+  align-items: center;
+  text-align: center;
+}
+
+.search {
+  align-items: center;
+  text-align: center;
+}/*# sourceMappingURL=Filter.css.map */
