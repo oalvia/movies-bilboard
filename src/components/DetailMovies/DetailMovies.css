@@ -1,0 +1,21 @@
+.image {
+  max-width: 500px;
+  max-width: 250px;
+  margin: 30px;
+  border-radius: 15%;
+  text-align: center;
+}
+
+.allMoviesDetail {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.main {
+  background: radial-gradient(circle at top left, rgb(52, 112, 176), #feffff);
+}/*# sourceMappingURL=DetailMovies.css.map */
