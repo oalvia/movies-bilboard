@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Main.scss";
 import ButtonSearch from "../ButtonSearch/ButtonSearch.jsx";
 import ButtonGenre from "../ButtonGenre/ButtonGenre.jsx";
@@ -27,7 +27,11 @@ const RenderList = ({ moviesData }) => {
         {moviesData.map((item, index) => (
           <div className="allMovies">
             <h3>{item.title}</h3>
-            <img src={item.image} alt="" className="imgList" />
+            <img
+              src={require(`../../images/${item.img}`)}
+              alt={item.title}
+              className="imgList"
+            />
             <Link to={`/detail/${index}`}>
               <p className="show">Show more... </p>
             </Link>

@@ -3,8 +3,8 @@ import "./GenreFilter.scss";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-function GenreFilter() {
-  const [moviesData, setMoviesData] = useState([]);
+function GenreFilter({moviesData, setMoviesData}) {
+  
   const [genre, setGenre] = useState("All");
 
   const handleGenre = (ev) => {
@@ -32,6 +32,7 @@ function GenreFilter() {
         onChange={(ev) => {
           handleGenre(ev.target.value);
         }}
+        value={genre}
       >
         <option value="All">All</option>
         <option value="Action">Action</option>
