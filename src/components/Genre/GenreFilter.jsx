@@ -28,6 +28,7 @@ function GenreFilter({ moviesData }) {
         />
       </div>
       <label htmlFor="genre" className="labelGenre">Genre</label>
+
       <select name="" id="genre" onChange={handleGenre} value={genre}>
         <option value="All">All</option>
         <option value="Action">Action</option>
@@ -64,6 +65,7 @@ function GenreFilter({ moviesData }) {
           {filteredList.map((movie, index) => (
             <div key={index} className="genreFilterContainer">
               <div className="allMoviesGenre">
+
                 <div>
                   <img
                     src={require(`../../images/${movie.img}`)}

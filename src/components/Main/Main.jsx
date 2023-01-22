@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Main.scss";
 import ButtonSearch from "../ButtonSearch/ButtonSearch.jsx";
 import ButtonGenre from "../ButtonGenre/ButtonGenre.jsx";
@@ -36,8 +36,6 @@ const RenderList = ({ moviesData }) => {
             <div className="allMovies" key={index}>
               <h3>{item.title}</h3>
               <h3>{item.img}</h3>
-
-              {console.log(item)}
               <img
                 src={require(`../../images/${item.img}`)}
                 alt={item.title}
@@ -48,6 +46,7 @@ const RenderList = ({ moviesData }) => {
               </Link>
             </div>
           </>
+
         ))}
         ;
       </div>

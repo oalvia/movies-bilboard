@@ -9,10 +9,9 @@ import Filter from "../components/Filter/Filter.jsx"
 import GetError from "../components/GetError/GetError.jsx"
 import Login from "../components/Login/Login.jsx"
 
-
-
 function App() {
   const [moviesData, setMoviesData] = useState([]);
+ 
   const url = "http://localhost:4000/moviesData";
 
   useEffect(() => {
@@ -23,6 +22,7 @@ function App() {
 
   return (
     <>
+   
     <Routes>
     
       <Route path='/' element={<Login moviesData={moviesData}/>}/>
@@ -40,6 +40,5 @@ function App() {
     </Routes>
     </>
   );
-
 }
 export default App;
