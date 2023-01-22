@@ -14,14 +14,16 @@ h2{
 }
 
 h3{
-    color: black; text-shadow: grey 0.1em 0.1em 0.2em; font-size: 30px;
+    color: black; text-shadow: grey 0.1em 0.1em 0.2em;
+    font-family: fantasy;
+
 }
 .list{
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 15px;   
+    margin: 15px; 
 }
 .allMovies{
     display: flex;
@@ -56,18 +58,27 @@ h3{
 }
 .show{
     transition: background-color .5s;
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family:fantasy;
+    
     
 }
 .show:hover{
-    background-color: powderblue;
+    background-color: rgb(223, 195, 73);
+
 }
 main{
     margin: 0px;
     padding: 0px;
-
     background: radial-gradient(circle at top left, rgb(52, 112, 176), #feffff) 
+    
+}
+.logOutContainer{
+    display: flex;
+    justify-content: end;
+}
+.logOut{
+    margin-right: 100px;
+    margin-top: 30px;
     
 }
 

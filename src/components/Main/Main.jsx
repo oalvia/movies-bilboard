@@ -8,6 +8,13 @@ const RenderList = ({ moviesData }) => {
   return (
     <main>
       <div className="buttonSearch">
+        <div className="logOutContainer" >
+          <Link to={`/`}>
+            <button type="submit" class="logOut btn btn-primary">
+              Log Out
+            </button>
+          </Link>
+        </div>
         <div className="imageContainer">
           <img
             className="mainImage"
@@ -25,9 +32,13 @@ const RenderList = ({ moviesData }) => {
 
       <div className="list">
         {moviesData.map((item, index) => (
-          <div className="allMovies">
+          <div className="allMovies" key={index}>
             <h3>{item.title}</h3>
-            <img src={item.image} alt="" className="imgList" />
+            {/*<img
+              src={require(`../../images/${item.img}`)}
+              alt={item.title}
+              className="imgList"
+            />*/}
             <Link to={`/detail/${index}`}>
               <p className="show">Show more... </p>
             </Link>
