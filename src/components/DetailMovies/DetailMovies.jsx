@@ -30,10 +30,11 @@ const DetailMovies = ({ moviesData }) => {
           <p>Title: {movie.title}</p>
           <p>Year: {movie.year}</p>
           <p>Genre: {movie.genres}</p>
+          <p>Director: {movie.director}</p>
           <p>Rating: {movie.rating}</p>
           <p>
-            <Link to="/">
-              <button className="btn btn-light">Home</button>
+            <Link to={`/main/`}>
+              <button className="btn btn-light btn-detail">Home</button>
             </Link>
           </p>
         </div>

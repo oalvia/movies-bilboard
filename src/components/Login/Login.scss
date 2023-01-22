@@ -1,0 +1,32 @@
+main{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    background: radial-gradient(circle at top left, rgb(52, 112, 176), #feffff) 
+    
+    
+    
+}  
+.login{
+    min-width : 400px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 200px;
+    
+
+    border: solid white;
+    border-radius: 5%;
+    margin: 45px;
+    background: radial-gradient(circle at top left, #a9bdea, white)
+}
+.containerForm{
+    display: inline-block;
+}
+
+.email{
+    text-align: left;
+    margin: 25px;
+    display: flex;
+    justify-content: space-around;
+}
