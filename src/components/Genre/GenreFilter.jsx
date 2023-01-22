@@ -65,11 +65,11 @@ function GenreFilter({ moviesData }) {
             <div key={index} className="genreFilterContainer">
               <div className="allMoviesGenre">
                 <div>
-                  {/*<img
+                  <img
                     src={require(`../../images/${movie.img}`)}
                     alt={movie.title}
                     className="genreFilterImage"
-                  />*/}
+                  />
                 </div>
 
                 <div>

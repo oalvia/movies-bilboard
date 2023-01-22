@@ -77,11 +77,11 @@ function FilterList() {
         {moviesDataFilter.map((movie, index) => (
           <div className="allMoviesSearch" key={index}>
             <div>
-              {/*<img
+              <img
                 src={require(`../../images${movie.img}`)}
                 alt={movie.title}
                 className="imgFilter"
-              />*/}
+              />
             </div>
             <div>
               <h3>{movie.title}</h3>
