@@ -19,8 +19,16 @@ function GenreFilter({ moviesData }) {
   });
 
   return (
-    <>
-      <label htmlFor="genre">Genre</label>
+    <main>
+      <div className="imageContainer">
+        <img
+          className="mainImage"
+          src="https://bendblockbuster.com/wp-content/themes/blockbuster/assets/images/blockbuster-logo.svg"
+          alt="Logo"
+        />
+      </div>
+      <label htmlFor="genre" className="labelGenre">Genre</label>
+
       <select name="" id="genre" onChange={handleGenre} value={genre}>
         <option value="All">All</option>
         <option value="Action">Action</option>
@@ -49,9 +57,15 @@ function GenreFilter({ moviesData }) {
       </select>
       <>
         <div>
+          <div className="btn1">
+            <Link to={`/main/`}>
+              <button className="btn btn-light">Home</button>
+            </Link>
+          </div>
           {filteredList.map((movie, index) => (
             <div key={index} className="genreFilterContainer">
-              <>
+              <div className="allMoviesGenre">
+
                 <div>
                   <img
                     src={require(`../../images/${movie.img}`)}
@@ -61,23 +75,17 @@ function GenreFilter({ moviesData }) {
                 </div>
 
                 <div>
-                  <p>Title: {movie.title}</p>
+                  <h3>Title: {movie.title}</h3>
                   <p>Year: {movie.year}</p>
                   <p>Genre: {movie.genres}</p>
                   <p>Rating: {movie.rating}</p>
                 </div>
-              </>
+              </div>
             </div>
           ))}
-
-          <div className="btn1">
-            <Link to="/">
-              <button className="btn btn-dark">Home</button>
-            </Link>
-          </div>
         </div>
       </>
-    </>
+    </main>
   );
 }
 

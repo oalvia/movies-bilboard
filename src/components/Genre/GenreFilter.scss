@@ -1,24 +1,32 @@
-.genreFilterContainer{
-    display: inline-flexbox;
-    flex-direction: column;
-    align-items: left;
+main{
+    margin: 0px;
+    padding: 0px;
+    background: radial-gradient(circle at top left, rgb(52, 112, 176), #feffff) 
+    
 }
 
-.genreList{
-    width : 400px;
-    height: 200px;
+.genreFilterContainer{
     display: flex;
     flex-direction: column;
-    align-items: left;
-    list-style-type: none;
-    text-align: left;
-    gap: 2px;
+    align-items: center;
+    text-align: center;
+
 }
-.genreFilterItem{
-    padding: 10px;
-    border: 0.5px solid blue;
+.allMoviesGenre{
+    
+    display: inline-block;
+    margin: 15px;
+    align-items: center;
+    border: solid #90acef;
+    min-width : 40%;
+    min-height: 80px;
+    border-radius: 15px;
+    width: 45%;
+    background: radial-gradient(circle at top left, #a9bdea, white)
 }
-.genreFilterImage{
-    max-width: 25vw;
-    height: auto;
+
+.labelGenre{
+    margin: 15px;
+    font-size: 20px;
+    font-family: fantasy;
 }
