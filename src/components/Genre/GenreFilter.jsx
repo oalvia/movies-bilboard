@@ -1,39 +1,27 @@
 import React from "react";
 import "./GenreFilter.scss";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-function GenreFilter({moviesData, setMoviesData}) {
-  
+function GenreFilter({ moviesData }) {
   const [genre, setGenre] = useState("All");
 
   const handleGenre = (ev) => {
-    setGenre(ev);
-    filteredList(ev);
+    setGenre(ev.target.value);
   };
 
-  const filteredList = () => {
-    const filterResults = moviesData.filter((element) => {
+  const filteredList = moviesData.filter((element) => {
     if (genre === "All") {
       return true;
     } else {
       return element.genres.includes(genre);
     }
   });
-  setMoviesData(filterResults);
-};
 
   return (
     <>
       <label htmlFor="genre">Genre</label>
-      <select
-        name=""
-        id="genre"
-        onChange={(ev) => {
-          handleGenre(ev.target.value);
-        }}
-        value={genre}
-      >
+      <select name="" id="genre" onChange={handleGenre} value={genre}>
         <option value="All">All</option>
         <option value="Action">Action</option>
         <option value="Sci-Fi">Sci-Fi</option>
@@ -59,11 +47,36 @@ function GenreFilter({moviesData, setMoviesData}) {
         <option value="Mystery">Mystery</option>
         <option value="Sport">Sport</option>
       </select>
-      <div className="btn1">
-        <Link to="/">
-          <button className="btn btn-dark">Home</button>
-        </Link>
-      </div>
+      <>
+        <div>
+          {filteredList.map((movie, index) => (
+            <div key={index} className="genreFilterContainer">
+              <>
+                <div>
+                  <img
+                    src={require(`../../images/${movie.img}`)}
+                    alt={movie.title}
+                    className="genreFilterImage"
+                  />
+                </div>
+
+                <div>
+                  <p>Title: {movie.title}</p>
+                  <p>Year: {movie.year}</p>
+                  <p>Genre: {movie.genres}</p>
+                  <p>Rating: {movie.rating}</p>
+                </div>
+              </>
+            </div>
+          ))}
+
+          <div className="btn1">
+            <Link to="/">
+              <button className="btn btn-dark">Home</button>
+            </Link>
+          </div>
+        </div>
+      </>
     </>
   );
 }

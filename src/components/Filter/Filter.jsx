@@ -74,8 +74,8 @@ function FilterList() {
       </div>
 
       <div className="listSearch">
-        {moviesDataFilter.map((movie) => (
-          <div className="allMoviesSearch">
+        {moviesDataFilter.map((movie, index) => (
+          <div className="allMoviesSearch" key={index}>
             <div>
               <img src={require(`../../images/${movie.img}`)}
             alt={movie.title} className="imgFilter" />

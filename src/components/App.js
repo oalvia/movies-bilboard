@@ -35,8 +35,8 @@ function App() {
         />
 
         <Route
-          path="/genre/:id"
-          element={<GenreFilter moviesData={moviesData} setMoviesData={setMoviesData} />}
+          path="/genre/"
+          element={<GenreFilter moviesData={moviesData} />}
         />
 
         <Route path="*" element={<GetError moviesData={moviesData} />} />

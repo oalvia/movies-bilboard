@@ -25,7 +25,7 @@ const RenderList = ({ moviesData }) => {
 
       <div className="list">
         {moviesData.map((item, index) => (
-          <div className="allMovies">
+          <div className="allMovies" key={index}>
             <h3>{item.title}</h3>
             <img
               src={require(`../../images/${item.img}`)}
