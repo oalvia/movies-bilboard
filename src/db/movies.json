@@ -1,441 +1,553 @@
 {
   "moviesData": [
     {
-      "id": 0,
+      "id":0,
       "title": "The Matrix",
       "director": "Lana Wachowski, Lilly Wachowski",
       "year": 1999,
-      "genre": ["Action", ", Sci-Fi"],
+      "genres": ["Action", "Sci-Fi"],
       "rating": 8.7,
-      "image" : "public/files/50firstdates.jpg"
+      "img":"matrix.jpg"
     },
     {
-      "id": 1,
+      "id":1,
       "title": "The Matrix Reloaded",
       "director": "Lana Wachowski, Lilly Wachowski",
       "year": 2003,
-      "genre": ["Action", ", Sci-Fi"],
+      "genres": ["Action", "Sci-Fi"],
       "rating": 7.2,
-      "image" : "https://es.web.img3.acsta.net/medias/nmedia/18/79/23/02/20073059.jpg"
+      "img":"matrixreloaded.jpg"
     },
     {
-      "id": 2,
+      "id":2,
       "title": "Finding Nemo",
       "director": "Andrew Stanton, Lee Unkrich",
       "year": 2003,
-      "genre": ["Animation", ", Adventure", ", Comedy"],
+      "genres": ["Animation", "Adventure", "Comedy"],
       "rating": 8.2,
-      "image" : "http://1.bp.blogspot.com/-7CvPKlMiKjY/UMGq-iuntRI/AAAAAAAAufw/NmpDMG7W0UY/s1600/finding+nemo+blu+ray+front+cover+portada+caratula+poster+cartel+2012+4+december+buscando+a+nemo+dory+marlin+chiqui+tortugas.jpg"
+      "img":"nemo.jpg"
     },
     {
-      "id": 3,
+      "id":3,
       "title": "Finding Dory",
       "director": "Andrew Stanton, Angus McLane",
       "year": 2016,
-      "genre": ["Animation", ", Adventure", ", Comedy"],
+      "genres": ["Animation", "Adventure", "Comedy"],
       "rating": 8.7,
-      "image": "https://m.media-amazon.com/images/I/51py13PzjaL.jpg"
+      "img":"dory.jpg"
     },
     {
-      "id": 4,
+      "id":4,
       "title": "Interstellar",
       "director": "Christopher Nolan",
       "year": 2014,
-      "genre": ["Adventure", ", Sci-Fi"],
+      "genres": ["Adventure", "Sci-Fi"],
       "rating": 8.6,
-      "image": "src/images/files/interstellar.jpg"
+      "img":"interstellar.jpg"
     },
     {
-      "id": 5,
+      "id":5,
       "title": "50 first dates",
       "director": "Peter Segal",
       "year": 2004,
-      "genre": ["Comedy", ", Romance"],
-      "rating": 6.8
+      "genres": ["Comedy", "Romance"],
+      "rating": 6.8,
+      "img":"50firstdates.jpg"
     },
     {
-      "id": 6,
+      "id":6,
       "title": "Fight Club",
       "director": " David Fincher",
       "year": 1999,
-      "genre": ["Drama"],
-      "rating": 8.8
+      "genres": ["Drama"],
+      "rating": 8.8,
+      "img":"fightclub.jpg"
     },
     {
-      "id": 7,
+      "id":7,
       "title": "Pulp Fiction",
       "director": "Quentin Tarantino",
       "year": 1994,
-      "genre": ["Crime"],
-      "rating": 8.9
+      "genres": ["Crime"],
+      "rating": 8.9,
+      "img":"pulpf.jpg"
     },
     {
-      "id": 8,
+      "id":8,
       "title": "Inglorious Basterds",
       "director": "Quentin Tarantino",
       "year": 2009,
-      "genre": ["War", ", Adventure", ", Drama"],
-      "rating": 7.1
+      "genres": ["War", "Adventure", "Drama"],
+      "rating": 7.1,
+      "img":"inglorbast.jpg"
     },
     {
-      "id": 9,
+      "id":9,
       "title": "The Hobbit: An Unexpected Journey",
       "director": "Peter Jackson",
       "year": 2012,
-      "genre": ["Adventure", ", Fantasy"],
-      "rating": 7.8
+      "genres": ["Adventure", "Fantasy"],
+      "rating": 7.8,
+      "img":"hobbit_journey.jpg"
     },
     {
-      "id": 10,
+      "id":10,
       "title": "The Hobbit: The Desolation of Smaug",
       "director": "Peter Jackson",
       "year": 2013,
-      "genre": ["Adventure", ", Fantasy"],
-      "rating": 7.8
+      "genres": ["Adventure", "Fantasy"],
+      "rating": 7.8,
+      "img":"hobbit_desolation.jpg"
     },
     {
-      "id": 11,
+      "id":11,
       "title": "The Hobbit: The Battle of the Five Armies",
       "director": "Peter Jackson",
       "year": 2014,
-      "genre": ["Adventure", ", Fantasy"],
-      "rating": 7.4
+      "genres": ["Adventure", "Fantasy"],
+      "rating": 7.4,
+      "img":"hobbit_battle.jpg"
     },
     {
-      "id": 12,
+      "id":12,
       "title": "Avatar",
       "director": "James Cameron",
       "year": 2009,
-      "genre": ["Action", ", Adventure", ", Fantasy"],
-      "rating": 7.9
+      "genres": ["Action", "Adventure", "Fantasy"],
+      "rating": 7.9,
+      "img":"avatar.jpg"
     },
     {
-      "id": 13,
+      "id":13,
       "title": "Avatar: The Way of Water",
       "director": "James Cameron",
       "year": 2022,
-      "genre": ["Action", ", Adventure", ", Fantasy"],
-      "rating": 8
+      "genres": ["Action", "Adventure", "Fantasy"],
+      "rating": 8,
+      "img":"avatar2.jpg"
     },
     {
-      "id": 14,
+      "id":14,
       "title": "Star Wars: Episode I - The Phantom Menace",
       "director": "George Lucas",
       "year": 1999,
-      "genre": ["Action", ", Adventure", ", Fantasy"],
-      "rating": 6.5
+      "genres": ["Action", "Adventure", "Fantasy"],
+      "rating": 6.5,
+      "img":"starwars1.jpg"
     },
     {
-      "id": 15,
+      "id":15,
       "title": "Star Wars: Episode II - Attack of the Clones",
       "director": "George Lucas",
       "year": 2002,
-      "genre": ["Action", ", Adventure", ", Fantasy"],
-      "rating": 6.6
+      "genres": ["Action", "Adventure", "Fantasy"],
+      "rating": 6.6,
+      "img":"starwars2.jpg"
     },
     {
-      "id": 16,
+      "id":16,
       "title": "Star Wars: Episode III - Revenge of the Sith",
       "director": "George Lucas",
       "year": 2005,
-      "genre": ["Action", ", Adventure", ", Fantasy"],
-      "rating": 7.6
+      "genres": ["Action", "Adventure", "Fantasy"],
+      "rating": 7.6,
+      "img":"starwars3.jpg"
     },
     {
-      "id": 17,
+      "id":17,
       "title": "Star Wars: Episode IV - A New Hope",
       "director": "George Lucas",
       "year": 1977,
-      "genre": ["Action", ", Adventure", ", Fantasy"],
-      "rating": 8.6
+      "genres": ["Action", "Adventure", "Fantasy"],
+      "rating": 8.6,
+      "img":"starwars4.jpg"
     },
     {
-      "id": 18,
+      "id":18,
       "title": "Star Wars: Episode V - The Empire Strikes Back",
       "director": "Irvin Kershner",
       "year": 1980,
-      "genre": ["Action", ", Adventure", ", Fantasy"],
-      "rating": 8.7
+      "genres": ["Action", "Adventure", "Fantasy"],
+      "rating": 8.7,
+      "img":"starwars5.jpg"
     },
     {
-      "id": 19,
+      "id":19,
       "title": "Star Wars: Episode VI - Return of the Jedi",
       "director": "Richard Marquand",
       "year": 1983,
-      "genre": ["Action", ", Adventure", ", Fantasy"],
-      "rating": 8.3
+      "genres": ["Action", "Adventure", "Fantasy"],
+      "rating": 8.3,
+      "img":"starwars6.jpg"
     },
     {
-      "id": 20,
+      "id":20,
       "title": "JAWS",
       "director": "Steven Spielberg",
       "year": 1975,
-      "genre": ["Adventure", ", Thriller"],
-      "rating": 8.1
+      "genres": ["Adventure", "Thriller"],
+      "rating": 8.1,
+      "img":"jaws.jpg"
     },
     {
-      "id": 21,
+      "id":21,
       "title": "Cocoon",
       "director": "Ron Howard",
       "year": 1985,
-      "genre": ["Comedy", ", Drama", ", Sci-Fi"],
-      "rating": 6.7
+      "genres": ["Comedy", "Drama", "Sci-Fi"],
+      "rating": 6.7,
+      "img":"cocoon.jpg"
     },
     {
-      "id": 22,
+      "id":22,
       "title": "The Lion King",
       "director": "Roger Allers, Rob Minkoff",
       "year": 1994,
-      "genre": ["Animation", ", Adventure", ", Drama"],
-      "rating": 8.5
+      "genres": ["Animation", "Adventure", "Drama"],
+      "rating": 8.5,
+      "img":"lion_king.jpg"
     },
     {
-      "id": 23,
+      "id":23,
       "title": "Cinema Paradiso",
       "director": "Giuseppe Tornatore",
       "year": 1988,
-      "genre": ["Drama", ", Romance"],
-      "rating": 8.5
+      "genres": ["Drama", "Romance"],
+      "rating": 8.5,
+      "img":"cinema_paradiso.jpg"
     },
     {
-      "id": 24,
+      "id":24,
       "title": "Schindler”s List",
       "director": "Steven Spielberg",
       "year": 1993,
-      "genre": ["Biography", ", Drama", ", History"],
-      "rating": 9
+      "genres": ["Biography", "Drama", "History"],
+      "rating": 9,
+      "img":"lista_schlinder.jpg"
     },
     {
-      "id": 25,
+      "id":25,
       "title": "Birdy",
       "director": "Steven Spielberg",
       "year": 1984,
-      "genre": ["Drama", ", War"],
-      "rating": 7.2
+      "genres": ["Drama", "War"],
+      "rating": 7.2,
+      "img":"birdy.jpg"
     },
     {
-      "id": 26,
+      "id":26,
       "title": "The Godfather",
       "director": "Francis Ford Coppola",
       "year": 1972,
-      "genre": ["Drama", ", Crime"],
-      "rating": 9.2
+      "genres": ["Drama", "Crime"],
+      "rating": 9.2,
+      "img":"godfather.jpg"
     },
     {
-      "id": 27,
+      "id":27,
       "title": "The Great Train Robbery",
       "director": "Edwin S. Porter",
       "year": 1903,
-      "genre": ["Short", ", Action", ", Adventure"],
-      "rating": 6.9
+      "genres": ["Short", "Action", "Adventure"],
+      "rating": 6.9,
+      "img":"greattrainrobbery.jpg"
     },
     {
-      "id": 28,
+      "id":28,
       "title": "Trip to the Moon",
       "director": "Georges Méliès",
       "year": 1902,
-      "genre": ["Short", ", Action", ", Adventure"],
-      "rating": 8.2
+      "genres": ["Short", "Action", "Adventure"],
+      "rating": 8.2,
+      "img":"triptothemoon.jpg"
     },
     {
-      "id": 29,
+      "id":29,
       "title": "The Horse in Motion",
       "director": "Eadweard Muybridge",
       "year": 1878,
-      "genre": ["Documentary", ", Short"],
-      "rating": "not rated"
+      "genres": ["Documentary", "Short"],
+      "rating": "not rated",
+      "img":"horseinmotion.jpg"
     },
     {
-      "id": 30,
+      "id":30,
       "title": "Mamma Mia!",
       "director": "Hyllida Lloyd",
       "year": 2008,
-      "genre": ["Comedy", ", Musical", ", Romance"],
-      "rating": 6.5
+      "genres": ["Comedy", "Musical", "Romance"],
+      "rating": 6.5,
+      "img":"mamma.jpg"
     },
     {
-      "id": 31,
+      "id":31,
       "title": "The Secret Garden",
       "director": "Marc Munden",
-      "year": 2020,
-      "genre": ["Drama", ", Family", ", Fantasy"],
-      "rating": 5.6
+      "year": 31020,
+      "genres": ["Drama", "Family", "Fantasy"],
+      "rating": 5.6,
+      "img":"secret_garden.jpg"
     },
     {
-      "id": 32,
+      "id":32,
       "title": "Wavelength",
       "director": "Michael Snow",
       "year": 1967,
-      "genre": ["Short", ", Drama", ", Experimental"],
-      "rating": 5.4
+      "genres": ["Short", "Drama", "Experimental"],
+      "rating": 5.4,
+      "img":"wavelength.jpg"
     },
     {
-      "id": 33,
+      "id":33,
       "title": "SAW",
       "director": "James Wan",
       "year": 2004,
-      "genre": ["Horror", ", Thriller", ", Mystery"],
-      "rating": 7.6
+      "genres": ["Horror", "Thriller", "Mystery"],
+      "rating": 7.6,
+      "img":"saw.jpg"
     },
     {
-      "id": 34,
+      "id":34,
       "title": "Upstream Color",
       "director": "Shane Carruth",
       "year": 2013,
-      "genre": ["Drama", ", Sci-Fi", ", Experimental"],
-      "rating": 6.5
+      "genres": ["Drama", "Sci-Fi", "Experimental"],
+      "rating": 6.5,
+      "img":"upstreamcolor.jpg"
     },
     {
-      "id": 35,
+      "id":35,
       "title": "Un perro andaluz",
       "director": "Luis Buñuel",
       "year": 1929,
-      "genre": ["Short", ", Horror", ", Experimental"],
-      "rating": 7.7
+      "genres": ["Short", "Horror", "Experimental"],
+      "rating": 7.7,
+      "img":"perro_andaluz.jpg"
     },
     {
-      "id": 36,
+      "id":36,
       "title": "Ghostbusters",
       "director": "Ivan Reitman",
       "year": 1984,
-      "genre": ["Action", ", Comedy", ", Fantasy"],
-      "rating": 7.8
+      "genres": ["Action", "Comedy", "Fantasy"],
+      "rating": 7.8,
+      "img":"ghostbusters.jpg"
     },
     {
-      "id": 37,
+      "id":37,
       "title": "Gremlins",
       "director": "Joe Dante",
       "year": 1984,
-      "genre": ["Comedy", ", Fantasy", ", Horror"],
-      "rating": 7.3
+      "genres": ["Comedy", "Fantasy", "Horror"],
+      "rating": 7.3,
+      "img":"gremlins.jpg"
     },
     {
-      "id": 38,
+      "id":38,
       "title": "Pink Floyd: The Wall",
       "director": "Alan Parker",
       "year": 1982,
-      "genre": ["Drama", ", Fantasy", ", Music"],
-      "rating": 8
+      "genres": ["Drama", "Fantasy", "Music"],
+      "rating": 8,
+      "img":"thewall.jpg"
     },
     {
-      "id": 39,
+      "id":39,
       "title": "The Green Mile",
       "director": "Frank Darabont",
       "year": 1999,
-      "genre": ["Crime", ", Drama", ", Fantasy"],
-      "rating": 8.6
+      "genres": ["Crime", "Drama", "Fantasy"],
+      "rating": 8.6,
+      "img":"greenmile.jpg"
     },
     {
-      "id": 40,
+      "id":40,
       "title": "Dune",
       "director": "David Lynch",
       "year": 1984,
-      "genre": ["Action", ", Adventure", ", Sci-Fi"],
-      "rating": 6.3
+      "genres": ["Action", "Adventure", "Sci-Fi"],
+      "rating": 6.3,
+      "img":"dune.jpg"
     },
     {
-      "id": 41,
+      "id":41,
       "title": "Taxi Driver",
       "director": "Martin Scorsese",
       "year": 1976,
-      "genre": ["Crime", ", Drama"],
-      "rating": 8.2
+      "genres": ["Crime", "Drama"],
+      "rating": 8.2,
+      "img":"taxidriver.jpg"
     },
     {
-      "id": 42,
+      "id":42,
       "title": "Casablanca",
       "director": "Michael Curtiz",
       "year": 1942,
-      "genre": ["Drama", ", Romance", ", War"],
-      "rating": 8.5
+      "genres": ["Drama", "Romance", "War"],
+      "rating": 8.5,
+      "img":"casablanca.jpg"
     },
     {
-      "id": 43,
+      "id":43,
       "title": "Citizen Kane",
       "director": "Orson Welles",
       "year": 1941,
-      "genre": ["Drama", ", Mystery"],
-      "rating": 8.3
+      "genres": ["Drama", "Mystery"],
+      "rating": 8.3,
+      "img":"citizenkane.jpg"
     },
     {
-      "id": 44,
+      "id":44,
       "title": "The Dirty Dozen",
       "director": "Robert Aldrich",
       "year": 1967,
-      "genre": ["Action", ", Adventure", ", War"],
-      "rating": 7.7
+      "genres": ["Action", "Adventure", "War"],
+      "rating": 7.7,
+      "img":"dirtydozen.jpg"
     },
     {
-      "id": 45,
+      "id":45,
       "title": "Titanic",
       "director": "James Cameron",
       "year": 1997,
-      "genre": ["Drama", ", Romance"],
-      "rating": 7.9
+      "genres": ["Drama", "Romance"],
+      "rating": 7.9,
+      "img":"titanic.jpg"
     },
     {
-      "id": 46,
+      "id":46,
       "title": "Apollo 13",
       "director": "Ron Howard",
       "year": 1995,
-      "genre": ["History", ", Adventure", ", Drama"],
-      "rating": 7.7
+      "genres": ["History", "Adventure", "Drama"],
+      "rating": 7.7,
+      "img":"apollo13.jpg"
     },
     {
-      "id": 47,
+      "id":47,
       "title": "Cast Away",
       "director": "Robert Zemeckis",
       "year": 2000,
-      "genre": ["Drama", ", Adventure", ", Romance"],
-      "rating": 7.8
+      "genres": ["Drama", "Adventure", "Romance"],
+      "rating": 7.8,
+      "img":"castaway.jpg"
     },
     {
-      "id": 48,
+      "id":48,
       "title": "Coco",
       "director": "Lee Unkrich, Adrian Molina",
       "year": 2017,
-      "genre": ["Animation", ", Adventure", ", Comedy"],
-      "rating": 8.4
+      "genres": ["Animation", "Adventure", "Comedy"],
+      "rating": 8.4,
+      "img":"coco.jpg"
     },
     {
-      "id": 49,
+      "id":49,
       "title": "Good Will Hunting",
       "director": "Gus Van Sant",
       "year": 1997,
-      "genre": ["Drama", ", Romance"],
-      "rating": 8.3
+      "genres": ["Drama", "Romance"],
+      "rating": 8.3,
+      "img":"goodwillhunting.jpg"
     },
     {
-      "id": 50,
+      "id":50,
       "title": "Chariots of Fire",
       "director": "Hugh Hudson",
       "year": 1981,
-      "genre": ["Biography", ", Drama", ", Sport"],
-      "rating": 7.1
+      "genres": ["Biography", "Drama", "Sport"],
+      "rating": 7.1,
+      "img":"chariotsoffire.jpg"
     },
     {
-      "id": 51,
+      "id":51,
       "title": "Jurassic World",
       "director": "Colin Trevorrow",
       "year": 2015,
-      "genre": ["Action", ", Adventure", ", Sci-Fi"],
-      "rating": 6.9
+      "genres": ["Action", "Adventure", "Sci-Fi"],
+      "rating": 6.9,
+      "img":"jurassicworld.jpg"
     },
     {
-      "id": 52,
+      "id":52,
       "title": "The Truman Show",
       "director": "Colin Trevorrow",
       "year": 1998,
-      "genre": ["Comedy", ", Drama"],
-      "rating": 8.2
+      "genres": ["Comedy", "Drama"],
+      "rating": 8.2,
+      "img":"trumanshow.jpg"
     },
     {
-      "id": 53,
+      "id":53,
       "title": "The Gods Must Be Crazy",
       "director": "Jamie Uys",
       "year": 1980,
-      "genre": ["Adventure", ", Comedy"],
-      "rating": 7.3
+      "genres": ["Adventure", "Comedy"],
+      "rating": 7.3,
+      "img":"godscrazy.jpg"
+    },
+    {
+      "id":54,
+      "title": "Airplane",
+      "director": "Jim Abrahams, David Zucker, Jerry Zucker",
+      "year": 1980,
+      "genres": ["Comedy"],
+      "rating": 7.3,
+      "img":"airplane.jpg"
+    },
+    {
+      "id":55,
+      "title": "Memento",
+      "director": "Christopher Nolan",
+      "year": 2000,
+      "genres": ["Thriller", "Mystery"],
+      "rating": 8.4,
+      "img":"memento.jpg"
+    },
+    {
+      "id":56,
+      "title": "Full Metal Jacket",
+      "director": "Stanley Kubrick",
+      "year": 2000,
+      "genres": ["Drama", "War"],
+      "rating": 8.3,
+      "img":"fullmetaljacket.jpg"
+    },
+    {
+      "id":57,
+      "title": "Scarface",
+      "director": "Brian De Palma",
+      "year": 1983,
+      "genres": ["Crime", "Drama"],
+      "rating": 8.3,
+      "img":"scarface.jpg"
+    },
+    {
+      "id":58,
+      "title": "The Great Race",
+      "director": "Blake Edwards",
+      "year": 1965,
+      "genres": ["Action", "Adventure", "Comedy"],
+      "rating": 7.2,
+      "img":"greatrace.jpg"
+    },
+    {
+      "id":59,
+      "title": "Dead Poets Society",
+      "director": "Peter Weir",
+      "year": 1989,
+      "genres": ["Comedy", "Drama"],
+      "rating": 8.1,
+      "img":"deadpoets.jpg"
+    },
+    {
+      "id":60,
+      "title": "Trainspotting",
+      "director": "Danny Boyle",
+      "year": 1996,
+      "genres": ["Drama"],
+      "rating": 8.1,
+      "img":"trainspotting.jpg"
     }
   ]
 }
