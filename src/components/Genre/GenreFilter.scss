@@ -1,0 +1,24 @@
+.genreFilterContainer{
+    display: inline-flexbox;
+    flex-direction: column;
+    align-items: left;
+}
+
+.genreList{
+    width : 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    list-style-type: none;
+    text-align: left;
+    gap: 2px;
+}
+.genreFilterItem{
+    padding: 10px;
+    border: 0.5px solid blue;
+}
+.genreFilterImage{
+    max-width: 25vw;
+    height: auto;
+}

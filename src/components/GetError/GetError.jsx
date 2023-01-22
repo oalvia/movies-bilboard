@@ -12,7 +12,7 @@ const GetError = () => {
 
       </div>
         <Link to="/">
-          <button class="btn btn-dark">Go Home</button>
+          <button className="btn btn-dark">Go Home</button>
         </Link>
       </div>
     </main>
