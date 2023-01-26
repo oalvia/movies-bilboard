@@ -23,6 +23,15 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
 .mainImage{
     margin-top: 25px;
+}
+.carousel{
+    display: flex;
+    justify-content: space-around;
+    min-width : 400px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 200px;
 }

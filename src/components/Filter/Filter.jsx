@@ -21,6 +21,7 @@ function FilterList() {
         console.log(error);
       });
   };
+  
   const handleChange = (ev) => {
     setSearch(ev.target.value);
     filter(ev.target.value);
@@ -77,6 +78,7 @@ function FilterList() {
         {moviesDataFilter.map((movie, index) => (
           <div className="allMoviesSearch" key={index}>
             <div>
+
               <img
                 src={require(`../../images/${movie.img}`)}
                 alt={movie.title}
@@ -90,7 +92,6 @@ function FilterList() {
             </div>
           </div>
         ))}
-        ;
       </div>
     </body>
   );
