@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(52, 112, 176);
+}
+
 .listSearch {
   display: flex;
   flex-direction: column;
@@ -18,8 +22,8 @@
 }
 
 .imgFilter {
-  width: 50px;
-  height: 60px;
+  width: 65px;
+  height: 80px;
   margin: 15px;
   border-radius: 25%;
 }

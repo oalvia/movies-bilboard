@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const GetError = () => {
   return (
-    <main className="main">
+    <body>
       <div className="error">
       <h3 className="errorText">ERROR</h3>
       <img className="imageError" src='https://cdn.pixabay.com/photo/2016/03/12/14/19/error-404-1252056_1280.png' alt="Error Logo" />
@@ -15,7 +15,7 @@ const GetError = () => {
           <button className="btn btn-dark">Go Home</button>
         </Link>
       </div>
-    </main>
+    </body>
   );
 };
 export default GetError;
