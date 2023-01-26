@@ -5,10 +5,17 @@
 .imageError {
   width: 50%;
   margin-bottom: 30px;
+  border-radius: 15%;
+
 }
 
 .errorText {
   margin-top: 30px;
-  font-size: 300%;
-  font-family: cursive;
-}/*# sourceMappingURL=GetError.css.map */
+  font-size: 150%;
+  font-family: fantasy;
+}
+
+.loginErrorImage {
+  width: 50%;
+  margin-top: 30px;
+}/*# sourceMappingURL=LoginError.css.map */

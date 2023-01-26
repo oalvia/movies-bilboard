@@ -1,1 +1,1 @@
-{"version":3,"sources":["GetError.scss","GetError.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;ACCJ;;ADEA;EACI,UAAA;EACA,mBAAA;ACCJ;;ADCA;EACI,gBAAA;EACA,eAAA;EACA,oBAAA;ACEJ","file":"GetError.css"}
+{"version":3,"sources":["LoginError.scss","LoginError.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;ACCJ;;ADEA;EACI,UAAA;EACA,mBAAA;EACA,kBAAA;ACCJ;;ADCA;EACI,gBAAA;EACA,eAAA;EACA,oBAAA;ACEJ;;ADAA;EACI,UAAA;EACA,gBAAA;ACGJ","file":"LoginError.css"}

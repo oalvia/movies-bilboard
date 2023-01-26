@@ -50,7 +50,7 @@ function FilterList() {
   }, []);
 
   return (
-    <main className="main">
+    <body>
       <div className="imageContainer">
         <img
           className="mainImage"
@@ -93,7 +93,7 @@ function FilterList() {
           </div>
         ))}
       </div>
-    </main>
+    </body>
   );
 }
 export default FilterList;
