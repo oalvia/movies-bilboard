@@ -8,6 +8,7 @@ import GenreFilter from "./Genre/GenreFilter.jsx"
 import Filter from "../components/Filter/Filter.jsx"
 import GetError from "../components/GetError/GetError.jsx"
 import Login from "../components/Login/Login.jsx"
+import LoginError from "../components/LoginError/LoginError.jsx"
 
 
 
@@ -34,6 +35,8 @@ function App() {
       <Route path='/filter/:id' element={<Filter moviesData={moviesData}/>}/>
 
       <Route path='/genre' element={<GenreFilter moviesData={moviesData}/>}/>
+
+      <Route path='/loginErr' element={<LoginError />}/>
 
       <Route path='*' element={<GetError moviesData={moviesData}/>}/>
 

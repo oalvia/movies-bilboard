@@ -1,14 +1,15 @@
-.image {
+.imageDetail {
   max-width: 500px;
   max-width: 250px;
   margin: 30px;
   border-radius: 15%;
   text-align: center;
+  border: solid white;
 }
 
 .allMoviesDetail {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 20px;
 }
 
@@ -22,4 +23,8 @@
 
 .btn-detail {
   margin: 20px;
+}
+
+.whiteColor {
+  color: white;
 }/*# sourceMappingURL=DetailMovies.css.map */

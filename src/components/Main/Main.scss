@@ -1,19 +1,17 @@
-h2{
-    color: rgb(222, 196, 28);
-    text-align: center;
-    align-items: center;
-    font-family: fantasy;
+*{
+    margin: 0;
+    padding: 0;
 }
 .mainImage{
     text-align: center;
     align-items: center;
-    width: 40%;
+    width: 60%;
 } 
 .imageContainer{
     text-align: center;
 }
-
 h3{
+    padding-top: 15px;
     color: black; text-shadow: grey 0.1em 0.1em 0.2em;
     font-family: fantasy;
 
@@ -24,29 +22,24 @@ h3{
     flex-wrap: wrap;
     justify-content: center;
     margin: 15px; 
+    
 }
 .allMovies{
     display: flex;
     flex-direction: column;
     margin: 15px;
-    width: 400px;
     align-items: center;
     text-align: center;
     border: solid white;
     border-radius: 5%;
     min-width : 300px;
     max-width: 300px;
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 380px;
+    max-height: 380px;
     background: radial-gradient(circle at top left, #a9bdea, white)
 
 }
-.imgList{
-    width: 200px;
-    height: 220px;
-    margin: 15px;
-    border-radius: 25%;
-}
+
 .buttonSearch{
     margin: 30px; 
     
@@ -66,20 +59,19 @@ h3{
     background-color: rgb(223, 195, 73);
 
 }
-main{
-    margin: 0px;
-    padding: 0px;
-    background: radial-gradient(circle at top left, rgb(52, 112, 176), #feffff) 
-    
+body{
+    background-color: rgb(52, 112, 176);  
 }
-.logOutContainer{
-    display: flex;
-    justify-content: end;
-}
+
 .logOut{
-    margin-right: 100px;
-    margin-top: 30px;
-    
+    margin-right: 20px; 
+}
+.image{
+    width: 50%;
+    height: 60%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 15%;
 }
 
 

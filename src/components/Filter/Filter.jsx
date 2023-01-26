@@ -49,7 +49,7 @@ function FilterList() {
   }, []);
 
   return (
-    <main className="main">
+    <body>
       <div className="imageContainer">
         <img
           className="mainImage"
@@ -78,7 +78,7 @@ function FilterList() {
           <div className="allMoviesSearch" key={index}>
             <div>
               <img
-                src={require(`../../images${movie.img}`)}
+                src={require(`../../images/${movie.img}`)}
                 alt={movie.title}
                 className="imgFilter"
               />
@@ -92,7 +92,7 @@ function FilterList() {
         ))}
         ;
       </div>
-    </main>
+    </body>
   );
 }
 export default FilterList;
