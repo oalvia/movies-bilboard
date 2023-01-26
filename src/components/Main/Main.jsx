@@ -32,21 +32,18 @@ const RenderList = ({ moviesData }) => {
 
       <div className="list">
         {moviesData.map((item, index) => (
-          <>
-            <div className="allMovies" key={index}>
-              <h3>{item.title}</h3>
-              <h3>{item.img}</h3>
-              <img
-                src={require(`../../images/${item.img}`)}
-                alt={item.title}
-                className="image"
-              />
-              <Link to={`/detail/${index}`}>
-                <p className="show">Show more... </p>
-              </Link>
-            </div>
-          </>
-
+              <div className="allMovies" key={index}>
+                <h3>{item.title}</h3>
+                <h3>{item.img}</h3>
+                <img
+                  src={require(`../../images/${item.img}`)}
+                  alt={item.title}
+                  className="image"
+                />
+                <Link to={`/detail/${index}`}>
+                  <p className="show">Show more... </p>
+                </Link>
+          </div>
         ))}
         ;
       </div>
