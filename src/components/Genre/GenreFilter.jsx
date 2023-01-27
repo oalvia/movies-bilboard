@@ -1,10 +1,13 @@
 import React from "react";
 import "./GenreFilter.scss";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import DataContext from "../Context/DataContext.jsx";
 
-function GenreFilter({ moviesData }) {
+function GenreFilter() {
   const [genre, setGenre] = useState("All");
+
+  const moviesData = useContext(DataContext);
 
   const handleGenre = (ev) => {
     setGenre(ev.target.value);
@@ -27,7 +30,9 @@ function GenreFilter({ moviesData }) {
           alt="Logo"
         />
       </div>
-      <label htmlFor="genre" className="labelGenre">Genre</label>
+      <label htmlFor="genre" className="labelGenre">
+        Genre
+      </label>
 
       <select name="" id="genre" onChange={handleGenre} value={genre}>
         <option value="All">All</option>
@@ -65,7 +70,6 @@ function GenreFilter({ moviesData }) {
           {filteredList.map((movie, index) => (
             <div key={index} className="genreFilterContainer">
               <div className="allMoviesGenre">
-
                 <div>
                   <img
                     src={require(`../../images/${movie.img}`)}
@@ -77,6 +81,7 @@ function GenreFilter({ moviesData }) {
                 <div>
                   <h3>Title: {movie.title}</h3>
                   <p>Year: {movie.year}</p>
+                  <p>Director: {movie.director}</p>
                   <p>Genre: {movie.genres}</p>
                   <p>Rating: {movie.rating}</p>
                 </div>
