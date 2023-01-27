@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.scss";
 import GetDataApi from "../../services/api.jsx";
-// import Carousel from "../Carousel/Carousel.jsx";
 
 const Login = () => {
   const url = "http://localhost:4000/usersRegister";
@@ -19,7 +18,6 @@ const Login = () => {
     email: "",
     password: "",
   });
-
 
   const handleChange = (ev) => {
     setUserLogin({ ...userLogin, [ev.target.id]: ev.target.value });
@@ -77,9 +75,6 @@ const Login = () => {
           </button>
         </form>
       </div>
-      {/* <div className="carousel">
-        <Carousel/>
-      </div> */}
     </main>
   );
 };

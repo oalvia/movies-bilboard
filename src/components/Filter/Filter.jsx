@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import "./Filter.scss";
 import { Link } from "react-router-dom";
-// import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DataContext from "../Context/DataContext.jsx";
 

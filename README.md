@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+BLOCKBUSTER
+27 de Enero de 2023
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DE SERGIO NAVACERRADA Y OSCAR ALVIAREZ
 
-## Available Scripts
+Este proyecto se presenta como trabajo final de nuestro curso de REACT, como parte del Full Stack Developer Bootcamp y tiene como objeto poner en práctica los procesos que hemos aprendido en clases y una excelente oportunidad para mejorar.
 
-In the project directory, you can run:
+El proyecto representa una galeria de información de películas de diferente genero, años, acompañado de un poster de cada película, un rating y el nombre del director.
 
-### `npm start`
+Se instalaron las siguientes dependencias, necesarias para el desarrollo del proyecto:
+    "axios": "^1.2.2",
+    "bootstrap": "^5.2.3",
+    "node-sass": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.7.0",
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+La información base viene de una seed utilizada en un proyecto anterior. Esta fue expandida y transformada a archivo .json. El archivo original contenia una dependencia única, llamada "moviesData". Posteriormente añadimos otra dependencia llamada "usersRegister" que incluye tres usuarios para simular el proceso de login, por comparación de parámetros, con los datos en dicha dependencia. En definitiva, nuestra base de datos (mock API Rest) contiene dos dependencias "moviesData" y "usersRegister".
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+El servidor lo levantamos utilizando JSON-server, con el siguiente comando en consola:
 
-### `npm test`
+npx json-server -p 4000 -w src/db/movies.json
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+y tendremos disponible las siguientes rutas:
 
-### `npm run build`
+http://localhost:4000/moviesData
+http://localhost:4000/usersRegister
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Cada elemento de la dependencia moviesData contiene los siguientes parametros:
+    "id":  (number)
+    "title": (string)
+    "director": (string)
+    "year": (number)
+    "genres": (Array (string))
+    "rating": (number)
+    "img": (string)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Cada elemento de la dependencia usersRegister contiene los siguientes parametros:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    "id": (number)
+    "email": (string)
+    "password": (string)
 
-### `npm run eject`
+El resultado del proyecto contiene las siguientes páginas:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+LOGIN : aqui se presenta la funcionalidad de Login, no permite avanzar en caso de no presentar una combinación registrada de usuario (email de usuario) y clave (string de 4 caracteres).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+MAIN : listado completo de todas las peliculas en la base de datos. Una vista reducida de lo que ampliaremos en detalle.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+MOVIES DETAIL: a través de un vinculo selecccionable en cada pelicula en la página MAIN, accedemos a una presentación de una sola película, la seleccionada, con información ampliada.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+FILTER : desde la página MAIN, pulsando un botón dedicado a tal fin, pasamos a la página con la función de filtro, donde podemos ingresar, en un campo de formulario, cualquier texto para encontrar coincidencias tanto en el título como en año de la película.
 
-## Learn More
+GENRE FILTER : desde la página MAIN, pulsando un botón dedicado a tal fin, pasamos a la página con la función de filtro por genero, a través de un selector tipo desplegable (drop down list) , y se obtiene una lista de películas que contienen el género seleccionado. Cada película incluye al menos un género y la mayoria de los casos, más de un género.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Podemos comentar las técnicas principales que hemos puesto en práctica:
+    Definición del proyecto, incluye todo el setup de dependencias.
+    Estructura a traves de componentes.
+    Props para manejo de datos.
+    Eventos como onClick, onChange.
+    Función manejadora de eventos, para escuchar los que producen las anteriores.
+    Variables de estado.
+    Formularios.
+    Links, para la funcionalidad de los botones.
+    Hooks. useEffect y useContext.
+    Axios para obtener los datos (metodo GET) de la API Rest.
+    Rutas (React Router) para poder desplegar las diferentes páginas.
+    Un sencilla autenticación de usuarios previamente registrados.
+    Otras técnicas propias de JS.
+    El estilo de las páginas, aunque no fue el foco del proyecto, permitió experimentar y aprender a aplicar estilos a través de las clases y el comando "className".
+    Usamos la librería Bootstrap para probar diferentes estilos de los que finalmente sólo aplicamos a los botones  (Filter, Genre, Logín , Home y Log Out.)
+    Hemos cuidado el diseño responsive para la correcta visualización en todo tipo de dispositivo además de evitar el scroll horizontal.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

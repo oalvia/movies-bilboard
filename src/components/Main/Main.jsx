@@ -6,8 +6,7 @@ import { Link } from "react-router-dom";
 import DataContext from "../Context/DataContext.jsx";
 
 const RenderList = () => {
-const moviesData = useContext(DataContext);
-
+  const moviesData = useContext(DataContext);
 
   return (
     <main>
