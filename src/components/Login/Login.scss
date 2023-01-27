@@ -1,20 +1,13 @@
-main{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
     text-align: center;
-    background: radial-gradient(circle at top left, rgb(52, 112, 176), #feffff) 
-    
-    
-    
+    background-color: rgb(52, 112, 176); 
 }  
 .login{
-    min-width : 400px;
-    max-width: 400px;
-    min-height: 200px;
-    max-height: 200px;
-    
-
+    width: 80%;
     border: solid white;
     border-radius: 5%;
     margin: 45px;
@@ -31,6 +24,9 @@ main{
     justify-content: space-around;
 }
 
+.mainImage{
+    margin-top: 25px;
+}
 .carousel{
     display: flex;
     justify-content: space-around;

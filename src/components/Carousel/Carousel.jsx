@@ -39,6 +39,3 @@ console.log(carouselImages);
 )
 };
 export default Carousel;
-
-
-

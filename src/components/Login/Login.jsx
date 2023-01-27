@@ -2,12 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.scss";
 import GetDataApi from "../../services/api.jsx";
-import Carousel from "../Carousel/Carousel.jsx";
-// import App from "../App";
-// import LoginContext from "../Context/LoginContext.jsx";
-// import RenderList from "../Main/Main";
-// import GenreFilter from "../Genre/GenreFilter";
-// import FilterList from "../Filter/Filter";
+// import Carousel from "../Carousel/Carousel.jsx";
 
 const Login = () => {
   const url = "http://localhost:4000/usersRegister";
@@ -25,7 +20,6 @@ const Login = () => {
     password: "",
   });
 
-  const [loginError, setLoginError] = useState("");
 
   const handleChange = (ev) => {
     setUserLogin({ ...userLogin, [ev.target.id]: ev.target.value });
@@ -40,18 +34,13 @@ const Login = () => {
         user.email === userLogin.email && user.password === userLogin.password
       );
     });
-    console.log(foundUser);
     if (foundUser) {
       setUserLogin(foundUser);
-      navigate ('/main');
+      navigate("/main");
     } else {
-      setLoginError("Email o clave invalida!");
-      navigate ('/loginErr');
+      navigate("/loginErr");
     }
-    return console.log(userLogin);
   };
-
-
 
   return (
     <main>
@@ -79,13 +68,13 @@ const Login = () => {
               onChange={handleChange}
             ></input>
           </div>
-            <button
-              type="button"
-              className="btn btn-primary"
-              onClick={handleClick}
-            >
-              Login
-            </button>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={handleClick}
+          >
+            Login
+          </button>
         </form>
       </div>
       {/* <div className="carousel">
