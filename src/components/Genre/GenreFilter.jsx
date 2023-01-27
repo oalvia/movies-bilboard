@@ -82,7 +82,7 @@ function GenreFilter() {
                   <h3>Title: {movie.title}</h3>
                   <p>Year: {movie.year}</p>
                   <p>Director: {movie.director}</p>
-                  <p>Genre: {movie.genres}</p>
+                  <p>Genre: {movie.genres.join(" - ")}</p>
                   <p>Rating: {movie.rating}</p>
                 </div>
               </div>
