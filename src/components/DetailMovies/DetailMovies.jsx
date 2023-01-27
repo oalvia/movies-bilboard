@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./DetailMovies.scss";
+import DataContext from "../Context/DataContext.jsx";
 
-const DetailMovies = ({ moviesData }) => {
+const DetailMovies = () => {
+  const moviesData = useContext(DataContext);
   const params = useParams();
   const movie = moviesData.find((mov) => mov.id === parseInt(params.id));
-
   const [image, setImage] = useState(movie.img);
 
   return (
@@ -29,7 +30,7 @@ const DetailMovies = ({ moviesData }) => {
         <div className="allMoviesDetail">
           <p className="whiteColor">Title: {movie.title}</p>
           <p className="whiteColor">Year: {movie.year}</p>
-          <p className="whiteColor">Genre: {movie.genres}</p>
+          <p className="whiteColor">Genre: {movie.genres.join(" - ")}</p>
           <p className="whiteColor">Director: {movie.director}</p>
           <p className="whiteColor">Rating: {movie.rating}</p>
           <p>

@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./Main.scss";
 import ButtonSearch from "../ButtonSearch/ButtonSearch.jsx";
 import ButtonGenre from "../ButtonGenre/ButtonGenre.jsx";
 import { Link } from "react-router-dom";
+import DataContext from "../Context/DataContext.jsx";
 
-const RenderList = ({ moviesData }) => {
+const RenderList = () => {
+const moviesData = useContext(DataContext);
+
+
   return (
     <main>
       <div className="buttonSearch">

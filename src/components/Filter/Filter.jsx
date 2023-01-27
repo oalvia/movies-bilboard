@@ -1,27 +1,22 @@
-import React from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "./Filter.scss";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import { useEffect, useState } from "react";
+// import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
+import DataContext from "../Context/DataContext.jsx";
 
 function FilterList() {
   const [moviesDataFilter, setMoviesDataFilter] = useState([]);
   const [movieList, setMovieList] = useState([]);
   const [search, setSearch] = useState("");
 
-  const apiGet = async () => {
-    await axios
-      .get("http://localhost:4000/moviesData")
-      .then((response) => {
-        setMoviesDataFilter(response.data);
-        setMovieList(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+  const moviesData = useContext(DataContext);
+
+  const getData = () => {
+    setMoviesDataFilter(moviesData);
+    setMovieList(moviesData);
   };
-  
+
   const handleChange = (ev) => {
     setSearch(ev.target.value);
     filter(ev.target.value);
@@ -46,7 +41,7 @@ function FilterList() {
   };
 
   useEffect(() => {
-    apiGet();
+    getData();
   }, []);
 
   return (
@@ -78,7 +73,6 @@ function FilterList() {
         {moviesDataFilter.map((movie, index) => (
           <div className="allMoviesSearch" key={index}>
             <div>
-
               <img
                 src={require(`../../images/${movie.img}`)}
                 alt={movie.title}
